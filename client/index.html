@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+    
+</div>
+<body>
+    <div class="social-icons ">
+
+        <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/satyajit-swain-794469202/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/your-username" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/your-phone-number" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/your-username" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/your-username" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/your-username" target="_blank"><i class="fab fa-instagram"></i></a>
+        
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home"  style="font-size: 24px; font-weight: bold; color: yellowgreen;">SATYAJIT SWAIN</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="bg-primary text-white">
+        <style>
+            #typewriter {
+              font-family: Arial, sans-serif;
+              font-size: 36px;
+              color: #cb3a3a;
+              text-align: center;
+              text-transform: uppercase;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              overflow: hidden;
+              white-space: nowrap;
+            }
+          </style>
+        </head>
+        <body>
+          <div id="typewriter"></div>
+        
+          <script>
+            const heading = "Welcome to My Website";
+            let index = 0;
+            const typewriterElement = document.getElementById("typewriter");
+        
+            function typeWriter() {
+              if (index < heading.length) {
+                typewriterElement.innerHTML += heading.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+              } else {
+                setTimeout(resetTypewriter, 10000);
+              }
+            }
+        
+            function resetTypewriter() {
+              typewriterElement.innerHTML = "";
+              index = 0;
+              typeWriter();
+            }
+        
+            typeWriter();
+          </script>
+
+
+    </section>
+
+    <section id="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/slide1.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slide2.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slide3.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate Python developer with a strong background in software development and a keen interest in problem-solving. With several years of experience in the field, I have developed a deep understanding of Python's versatility and its applications across various domains.
+
+                Technical Expertise
+                I specialize in developing efficient and scalable solutions using Python. My skill set includes:
+                
+                Python Development: I am proficient in writing clean, modular, and well-documented Python code. From scripting to building complex applications, I enjoy working on diverse projects and leveraging Python's extensive libraries and frameworks.
+                
+                Web Development: I have expertise in web development using frameworks such as Django and Flask. I am well-versed in creating RESTful APIs, handling databases, implementing user authentication, and ensuring web application security.
+                
+                Data Analysis and Machine Learning: I am passionate about data-driven insights and have experience in data analysis and machine learning using Python's popular libraries like Pandas, NumPy, and scikit-learn. I enjoy exploring datasets, performing statistical analysis, and building predictive models.
+                
+                Automation and Scripting: With Python's powerful scripting capabilities, I have automated various tasks, ranging from data processing and file manipulation to web scraping and system administration. I believe in the power of automation to improve efficiency and productivity.
+                
+                Collaborative and Agile
+                I thrive in collaborative environments and enjoy working in Agile methodologies. I am a strong advocate for code reviews, test-driven development (TDD), and continuous integration and deployment (CI/CD). I believe in writing maintainable and scalable code that promotes teamwork and ensures the success of the projects I work on.
+                
+                Lifelong Learner
+                I am committed to continuously expanding my skill set and staying updated with the latest trends and technologies in the Python ecosystem. I actively engage in self-learning, attend tech conferences, and contribute to the open-source community. I am always eager to learn new frameworks, tools, and techniques that can enhance my abilities as a Python developer.
+                
+                Problem-Solver and Analytical Thinker
+                I am passionate about tackling complex problems and finding elegant solutions. I possess strong analytical thinking and problem-solving skills, which allow me to break down intricate challenges into manageable components and develop effective strategies to overcome them. I believe in writing code that is not only functional but also optimized and maintainable.
+                
+                Let's Connect!
+                If you're looking for a skilled Python developer who can bring your ideas to life, I would love to collaborate with you. Whether it's developing web applications, implementing data analysis solutions, or automating your processes, I am dedicated to delivering high-quality results.
+                
+                Feel free to reach out to me through the contact information provided on this website. Let's discuss your project requirements, and together, we can create innovative solutions powered by Python!
+                
+                .</p>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light">
+        <div class="container">
+            <h2>Services</h2>
+            <ul>
+                <li>Service 1: Brief description of service 1.</li>
+                <li>Service 2: Brief description of service 2.</li>
+                <li>Service 3: Brief description of service 3.</li>
+                <li>Service 4: Brief description of service 4.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <h2>My Work</h2>
+            <p>Take a look at some of my previous projects to get an idea of my capabilities and the quality of my work.</p>
+            <!-- Add images, descriptions, or other content to showcase your work -->
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me using the following contact details:</p>
+            <ul>
+                <li>Email: info@example.com</li>
+                <li>Phone: +1 123-456-7890</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2>My Resume</h2>
+            <p>Download my resume for more information about my skills, experience, and education.</p>
+            <a href="./src/images/SATYAJIT SWAIN.pdf" class="btn btn-primary" download="Satyajit Swain-Resume">Download Resume</a>
+            <!-- <a href="./src/images/SATYAJIT SWAIN.pdf" class="btn btn-primary" download="Satyajit Swain-Resume">Download Resume</a> -->
+            <!-- <li><a href="./src/images/SATYAJIT SWAIN.pdf" class="btn btn-primary"download="Satyajit Swain-CV"> Download Resume</a></li> -->
+        </div>
+    </section>
+    
+    <!--Get in Touch  -->
+    
+    <div class="modal fade" id="getInTouchModal" tabindex="-1" role="dialog" aria-labelledby="getInTouchModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="getInTouchModalLabel">Get in Touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="get-in-touch-button">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#getInTouchModal">Get in Touch</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2023 My Website. All rights reserved.</p>
+        </div>
+        
+        <button id="backToTopBtn" class="btn btn-primary">Back to Top</button>
+        <script>
+        window.addEventListener("scroll", function() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+            if (window.pageYOffset > 100) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        });
+        
+        document.getElementById("backToTopBtn").addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    </footer>
+</body>
+</html>

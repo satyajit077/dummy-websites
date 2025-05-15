@@ -1,0 +1,145 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+}
+
+nav .navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav .navbar-nav .nav-link {
+  color: #fff;
+}
+
+nav .navbar-nav .nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Section styles */
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Slider styles */
+#carousel .carousel-item img {
+  height: 500px;
+}
+
+/* About section styles */
+#about {
+  background-color: #f4f4f4;
+}
+
+/* Services section styles */
+#services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#services li {
+  margin-bottom: 20px;
+}
+
+/* Work section styles */
+#work {
+  background-color: #f4f4f4;
+}
+
+/* Contact section styles */
+#contact {
+  padding-bottom: 0;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+}
+
+/* Resume section styles */
+#resume .btn-primary {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+}
+
+/* Social icons styles */
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.social-icons a {
+  color: #333;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  .social-icons {
+    display: none;
+  }
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+.get-in-touch-button {
+    position: sticky;
+    top: 40%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 9999;
+  background-color: green;
+  color: white;
+}
+
